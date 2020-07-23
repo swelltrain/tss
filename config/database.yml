@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: tss_development
+  pool: 5
+  username: stephenphilp
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: tss_test
+  pool: 5
+  username: stephenphilp
