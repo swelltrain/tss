@@ -66,6 +66,8 @@ GEM
     diff-lcs (1.4.4)
     erubi (1.9.0)
     execjs (2.7.0)
+    factory_bot (6.1.0)
+      activesupport (>= 5.0.0)
     ffi (1.13.1)
     figaro (1.2.0)
       thor (>= 0.14.0, < 2)
@@ -202,6 +204,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
+  factory_bot
   figaro
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
