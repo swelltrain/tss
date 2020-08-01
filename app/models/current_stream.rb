@@ -21,8 +21,12 @@ class CurrentStream < ApplicationRecord
   scope :with_language, -> (language) { where(language: language) }
   scope :random, -> (n) { order("RANDOM()").limit(n) }
 
-  def thumbnail_url(width, height)
+  # TODO this belongs in a presenter/serializer
+  #
+  def thumbnail_url(width=nil, height=nil)
+    return self[:thumbnail_url] if width.nil? || height.nil?
     return '' if self[:thumbnail_url].blank?
+
     self[:thumbnail_url].gsub(/\{width\}/, width.to_s).gsub(/\{height\}/, height.to_s)
   end
 end
