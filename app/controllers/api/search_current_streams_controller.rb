@@ -6,5 +6,10 @@ module Api
       @search_current_streams = SearchCurrentStreams.new
       render json: @search_current_streams
     end
+
+    def create
+      results = CurrentStream.first(5)
+      render json: results
+    end
   end
 end
