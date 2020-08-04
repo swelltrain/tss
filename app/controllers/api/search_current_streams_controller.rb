@@ -7,7 +7,7 @@ module Api
       render json: @search_current_streams
     end
 
-    def create
+    def index
       results = CurrentStream.first(5)
       render json: results
     end

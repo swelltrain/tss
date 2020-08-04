@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-RSpec.describe 'POST /api/search_current_streams', type: :request do
-  subject { post '/api/search_current_streams' }
+RSpec.describe 'GET /api/search_current_streams', type: :request do
+  subject { get '/api/search_current_streams' }
 
   it 'returns http status ok' do
     subject

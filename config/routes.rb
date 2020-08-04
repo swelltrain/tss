@@ -2,6 +2,6 @@
 
 Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
-    resources :search_current_streams, only: %i[new create]
+    resources :search_current_streams, only: %i[new index]
   end
 end
