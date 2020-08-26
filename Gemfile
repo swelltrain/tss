@@ -27,6 +27,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'sidekiq'
 
+# allow CORS since we are hosting the fe code on localhost:3000 and this api on localhost:3030
+gem 'rack-cors'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
