@@ -8,8 +8,10 @@ module Api
     end
 
     def index
+      options = {}
       results = CurrentStream.first(5)
-      render json: results
+      options[:meta] = { total: results.count }
+      render json: CurrentStreamSerializer.new(results, options)
     end
   end
 end
