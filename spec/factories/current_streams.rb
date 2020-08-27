@@ -7,6 +7,7 @@ FactoryBot.define do
     viewer_count { 1 }
     title { 'some_title' }
     language { 'EN' }
+    started_at { Time.now }
     sequence :streamers_original_provider_id do |n|
       n
     end
